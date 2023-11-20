@@ -1,0 +1,248 @@
+.productDetailPage {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color:var(--main-color);
+  padding: 15px;
+  margin: auto;
+  @media (max-width: 400px){
+    padding: 0px;
+  }
+  .container {
+    width: 80%;
+    min-height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap:70px;
+    border: 1px solid silver;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-top: 10px;
+    @media (max-width:1000px) {
+      width: calc(100% - 5%) ;
+      flex-direction:column-reverse;
+      justify-content: center;
+      align-items: center;
+      gap:0px;
+    }
+    .mediaCart {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width:50%;
+      height: 90vh;
+      @media(max-width:1000px){
+        width:100%; 
+        height: 90vh;
+        margin-bottom: 20px;
+      }
+      
+    }
+
+    .textContainer {
+      width: 50%;
+      text-align: right;
+      padding: 50px 50px 0px 0px;
+      @media(max-width:1000px){
+        width:100%;
+        padding:0px 20px 0px 20px;
+      }
+      h3 {
+        font-size: 1.5rem;
+        color: #1a73e8;
+        margin: 60px 10px 20px 10px;
+      }
+      .description {
+        text-align: justify;
+        font-size: 1rem;
+        color: rgb(62, 62, 62);
+        margin-bottom: 30px;
+      }
+      .category {
+        color: rgb(62, 62, 62);
+        font-weight: bold;
+        margin-bottom: 50px;
+        font-size: 1rem;
+        span {
+          color: orange;
+          font-size: 1rem;
+          margin-left: 10px;
+ 
+        }
+      }
+      .buttonContainer {
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        a {
+          text-decoration: none;
+          display: inline-block;
+          background: #1a73e8;
+          padding: 7px 16px;
+          color: #fff;
+          font-weight: bold;
+          border-radius: 5px;
+          margin-bottom: 20px;
+          transition: all 0.2s ease;
+          box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px,
+            rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px,
+            rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 9px 16px;
+          &:hover {
+            background-color: #0b499b;
+          }
+        }
+      }
+    }
+  }
+  .commentContainer{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    @media (max-width: 850px){
+      width:calc(100% - 5%);
+      flex-direction: column;
+      align-items: center;
+      justify-content:center;
+    }
+    .textfeildContainer{
+      width:50%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      @media (max-width: 850px){
+        width: 100%;
+        align-items: center;
+      }
+  
+      h2{
+        color: #333;
+        background-color: #ccc;
+        border-radius: 5px;
+        padding: 7px;
+        font-size: 1rem;
+        margin: 10px 0px 0px 0px;
+        border:1px solid blue;
+  
+      }
+      .commentTextfield{
+        .body{
+          padding: 10px;
+          display: flex;
+          align-items:flex-start;
+          justify-content: flex-start;
+          width: 300px;
+          min-height: 50px;
+          border: 1px solid silver;
+          background-color: #fff;
+          border-radius: 5px;
+          margin: 10px 0px 0px 0px;
+          @media (max-width: 700px){
+            width:250px;
+          }
+          p{
+            font-size: 1rem;
+            color:#333;
+          }
+        }
+        span{
+          font-size: 12px;
+          color: #fff;
+        }
+      }
+    }
+
+    .postComment{
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      @media (max-width: 850px){
+        width: 100%;
+      }
+      h1{
+        font-size: 14px;
+        margin-top:30px;
+        margin-bottom: 2px;
+        color: #fff;
+        border-top: 2px solid orange;;
+      }
+      form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5px;
+        width: 100%;
+        .formInput {
+          width: 100%;
+          height: 70px;
+          border-radius: 5px;
+          padding: 0px 10px;
+          border: 1px solid silver;
+          transition: all 0.2s ease-in;
+          &:focus{
+            outline: none;
+            line-height: 30px;
+            height: 70px;
+            border: 1px solid #1a73e8;
+          }
+        }
+        .uncompleted {
+          width: 100%;
+          height: 70px;
+          border-radius: 5px;
+          padding: 0px 10px;
+          border: 1px solid red;
+          transition: all 0.2s ease-in;
+          &:focus{
+            outline: none;
+            line-height: 30px;
+            height: 70px;
+            border: 1px solid #1a73e8;
+          }
+        }
+        .errorSpan {
+          height: 10px;
+          text-align: right;
+          margin-top: 5px;
+          width: fit-content;
+          font-size: 0.9rem;
+          color: red;
+          line-height: 10px;
+          padding: 2px 3px;
+          border-radius: 3px;
+          background-color: rgba(255, 0, 0, 0.175);
+        }
+        button{
+          width: 200px;
+          margin-top: 15px;
+          text-decoration: none;
+          display: inline-block;
+          background: #1a73e8;
+          padding: 7px 16px;
+          color: #fff;
+          font-weight: bold;
+          border-radius: 5px;
+          margin-bottom: 20px;
+          transition: all 0.2s ease;
+          box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px,
+            rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px,
+            rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 9px 16px;
+          &:hover {
+            background-color: #0b499b;
+          }
+        }
+      }
+    }
+  }
+
+
+}

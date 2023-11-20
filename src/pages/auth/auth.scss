@@ -1,0 +1,79 @@
+.authPage {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("../../assets/ph.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  // background-color: var(--main-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0px;
+  .cardAuth {
+    width: 500px;
+    height: fit-content;
+    background-color: #333;
+    padding: 50px 50px 50px 50px;
+    border-radius: 0;
+    border: 1px solid #333;
+    font-family: YekanBakh;
+    @media (max-width: 600px) {
+      width: calc(100% - 10%);
+      padding:30px;
+    }
+
+    form {
+      font-family: YekanBakh;
+      .ant-form-item{
+        color: #fff !important;
+        font-family: YekanBakh;
+        .ant-form-item-label {
+          text-align: left !important;
+          white-space: nowrap;
+          font-family: YekanBakh;
+          @media(max-width:600px){
+            text-align: right !important;
+            
+          }
+          > label{
+            color: #ccc !important;
+
+          }
+        }
+
+
+        .ant-form-item-required:before {
+          content: "" !important;
+          font-family: YekanBakh;
+        }
+        .ant-form-item-required:after {
+          content: '*'!important;
+          color: #ff4d4f;
+          top: -0.5px !important;
+          margin-left: 5px;
+          display: inline-block !important;
+          margin: 0 4px 0 4px;
+          font-family: YekanBakh;
+          @media(max-width:600px){
+            display: inline-block !important;
+          }
+        }
+        button{
+          width: 100%;
+          background: blue;
+          font-family: YekanBakh;
+        }
+        .link{
+         padding:10px;
+         font-family: YekanBakh;
+        a{
+          padding-right: 10px;
+          font-family: YekanBakh;
+        }
+        }
+      
+      }
+
+    }
+  }
+}

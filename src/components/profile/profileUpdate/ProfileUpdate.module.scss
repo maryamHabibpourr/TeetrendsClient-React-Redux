@@ -1,0 +1,110 @@
+.updateProfileContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0px;
+
+
+  .cardUpadeProfile {
+    width: 600px;
+    height: fit-content;
+    background-color: #333;
+    padding: 50px 50px 50px 50px;
+    border-radius: 0;
+    border: 1px solid #333;
+    @media (max-width:800px) {
+      width: 100%;
+      padding: 10px;
+    }
+    form {
+      width: 100%;
+      .inputeContainer{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 75px;
+        margin-bottom: 10px;
+        .label{
+          text-align: right;
+          color:#fff;
+          font-size: 0.9rem;
+          .redStar {
+            color: red;
+            font-size: 20px;
+            margin-left: 5px;
+          } 
+        }
+        .formInput {
+          width: 100%;
+          height: 30px;
+          border-radius: 5px;
+          padding: 0px 10px;
+          border: 1px solid silver;
+          transition: all 0.2s ease-in;
+          &:focus{
+            outline: none;
+            line-height: 30px;
+            height: 30px;
+            border: 1px solid #1a73e8;
+          }
+        }
+        .uncompleted {
+          width: 100%;
+          height: 30px;
+          border-radius: 5px;
+          padding: 0px 10px;
+          border: 1px solid red;
+          transition: all 0.2s ease-in;
+          &:focus{
+            outline: none;
+            line-height: 30px;
+            height: 30px;
+            border: 1px solid #1a73e8;
+          }
+        }
+        .errorSpan {
+          height: 10px;
+          text-align: right;
+          margin-top: 5px;
+          width: fit-content;
+          font-size: 0.9rem;
+          color: red;
+          line-height: 10px;
+          padding: 2px 3px;
+          border-radius: 3px;
+          background-color: rgba(255, 0, 0, 0.175);
+        }
+        select{
+          outline: none;
+          width: 100%;
+          height: 30px;
+          border-radius: 5px;
+          padding: 0px 10px;
+          border: 1px solid silver;
+          transition: all 0.2s ease-in;
+          .options{
+            cursor: pointer !important; 
+          }
+
+        }
+        
+      }
+      
+      button{
+        width: 100%;
+        background-color: rgb(35, 35, 199);
+        color: #fff;
+        border-radius: 5px;
+        padding: 5px 0px;
+        margin: 10px 0px;
+        transition: all 0.3s ease-in-out;
+        &:hover{
+          background-color: gray;
+        }
+      }
+    
+    }
+  }
+}
+

@@ -1,0 +1,207 @@
+.cartContainer {
+  width: 100%;
+  min-height: 100vh;
+  padding: 50px;
+  background-color:var(--main-color);
+  @media(max-width: 507px){
+    padding:50px 0px;
+  }
+
+  .cartMainContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .cartNews{
+        width: 80%;
+        height: 120px;
+        padding: 10px;
+        border: 1px solid silver;
+        border-radius: 6px;
+        margin: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background: #fff;
+        @media(max-width: 507px){
+          width: calc(100% - 10%)
+        }
+        h1{
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 15px;
+        }
+        button{
+            background-color: #34a853;
+            color: #fff;
+            padding: 10px;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 400;
+        }
+    }
+    .containerItems {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 15px;
+    border: 1px solid silver;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    @media(max-width: 507px){
+      width: calc(100% - 10%);
+      padding:0;
+      flex-direction: column;
+    }
+    .productImage{
+        width: 100px;
+        @media(max-width: 507px){
+          width: 100%;
+      }          
+    }
+
+    .data {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        h3 {
+          color: #1a73e8;
+          margin-bottom: 10px;
+          font-size: 16px;
+          font-weight: 600;
+          @media (max-width: 507px) {
+            margin-top: 10px;
+          }
+        }
+        p {
+          color: #34a853;
+          font-weight:bold;
+          font-size: 14px;
+          @media (max-width: 507px) {
+            margin-bottom: 10px;
+          }
+        }
+      }
+      .quantity {
+        background: orange;
+        width: 25px;
+        height: 25px;
+        display: inherit;
+        line-height: 25px;
+        border-radius: 3px;
+        color: #fff;
+        font-weight: bold;
+        text-align: center;
+        @media (max-width: 470px) {
+          margin: 0 0 10px;
+        }
+      }
+
+      .buttonContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        button {
+          background-color: #1a73e8;
+          border: none;
+          color: #fff;
+          height: 30px;
+          border-radius: 4px;
+          cursor: pointer;
+          transition: all 0.2s ease;
+          width: 30px;
+          font-size: 1.6rem !important;
+          font-weight: bold;
+          line-height: 30px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 4px 12px -2px,
+            rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+          margin-left: 5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        img {
+          width: 20px;
+        }
+        @media (max-width: 470px) {
+          margin: 20px 0 20px;
+        }
+      }
+    }
+  }
+  .cartProcess {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction:row;
+    @media(max-width: 750px){
+      flex-direction:column;
+      gap: 20px;
+    }
+    .cartProcessfactore{
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @media(max-width: 750px){
+       width: 100%;
+      }
+      @media(max-width: 470px){
+        width: calc(100% - 10%);
+       }
+    }
+    .buttonProceessContainer{
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      @media(max-width: 750px){
+        width: 100%;
+       }
+       @media(max-width: 470px){
+         width: calc(100% - 10%);
+        }
+      .countineBuying{
+        background-color: #1a73e8;
+        border: none;
+        color: #fff;
+        height: 50px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        width:90%;
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 15px;
+        letter-spacing: 0.06em;
+        &:hover{
+          background-color: #1451a1;
+        }
+      }
+      .deleteCart{
+        background-color: #34a853;
+        border: none;
+        color: #fff;
+        height: 50px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        width:90%;
+        font-size: 14px ;
+        font-weight: 400;
+        letter-spacing: 0.06em;
+        &:hover{
+          background-color: #2a5b37;
+        }
+      }
+    }
+  }
+}
